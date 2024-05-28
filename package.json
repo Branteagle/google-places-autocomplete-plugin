@@ -1,7 +1,7 @@
 {
   "name": "google-places-autocomplete",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "homepage": "https://branteagle.github.io/google-places-autocomplete-plugin/",
   "scripts": {
     "build": "rollup -c rollup.config.mjs",
     "dev": "rollup -c rollup.config.mjs -w",
