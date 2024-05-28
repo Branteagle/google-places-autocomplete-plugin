@@ -1,0 +1,76 @@
+{
+    "type": "component",
+    "metadata": {
+      "name": "Google Places Autocomplete",
+      "description": "A component for Google Places Autocomplete",
+      "icon": "map-marker",
+      "categories": ["Input"],
+      "keywords": ["google", "places", "autocomplete"]
+    },
+    "settings": [
+      {
+        "type": "text",
+        "key": "apiKey",
+        "label": "Google API Key",
+        "required": true
+      }
+    ],
+    "context": [
+      {
+        "type": "static",
+        "values": [
+          {
+            "key": "selectedPlace",
+            "label": "Selected Place",
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string",
+                "label": "Description"
+              },
+              "placeId": {
+                "type": "string",
+                "label": "Place ID"
+              },
+              "reference": {
+                "type": "string",
+                "label": "Reference"
+              },
+              "mainText": {
+                "type": "string",
+                "label": "Main Text"
+              },
+              "secondaryText": {
+                "type": "string",
+                "label": "Secondary Text"
+              },
+              "terms": {
+                "type": "array",
+                "label": "Terms",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "offset": {
+                      "type": "number",
+                      "label": "Offset"
+                    },
+                    "value": {
+                      "type": "string",
+                      "label": "Value"
+                    }
+                  }
+                }
+              },
+              "types": {
+                "type": "array",
+                "label": "Types",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
